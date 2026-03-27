@@ -21,7 +21,7 @@ public class BootDemo1Application {
 	@Bean
 	@Profile("test")
 	public DataSource dataSource(){
-		System.out.println(":::::::Profile test activated and DS created :::::::");
+		
 		DriverManagerDataSource ds= new DriverManagerDataSource();
 		ds.setDriverClassName("org.h2.Driver");
 		ds.setUrl("jdbc:h2:file:./data/testdb;DB_CLOSE_ON_EXIT=FALSE");
